@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body class="container" ng-controller="ContactController" style="max-width:500px; margin-top:20px;">
+
+<h3 class="text-center">Registration Form</h3>
+
+<form class="well">
+    <input type="text" class="form-control mb-2" placeholder="Name" ng-model="newcontact.name"><br>
+    <input type="email" class="form-control mb-2" placeholder="Email" ng-model="newcontact.email"><br>
+    <input type="password" class="form-control mb-2" placeholder="Password" ng-model="newcontact.password"><br>
+    <input type="text" class="form-control mb-2" placeholder="Phone" ng-model="newcontact.phone"><br>
+    <input type="text" class="form-control mb-2" placeholder="Age" ng-model="newcontact.age"><br>
+
+    <button class="btn btn-primary" ng-click="saveContact()">Submit</button>
+</form>
+
+<h4>Registered Users</h4>
+
+<table class="table table-bordered" ng-if="contacts.length">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Age</th>
+        <th>Action</th>
+    </tr>
+
+    <tr ng-repeat="c in contacts">
+        <td>{{c.name}}</td>
+        <td>{{c.email}}</td>
+        <td>{{c.phone}}</td>
+        <td>{{c.age}}</td>
+        <td>
+            <button class="btn btn-info btn-sm" ng-click="edit(c.id)">Edit</button>
+            <button class="btn btn-danger btn-sm" ng-click="delete(c.id)">Delete</button>
+        </td>
+    </tr>
+</table>
+
+<p ng-if="!contacts.length">No Users Found</p>
+
+</body>
+</html>
