@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="employee.xsl"?>
+<!DOCTYPE company SYSTEM "employee.dtd">
+
+<company>
+
+  <employee>
+    <username>Krutika</username>
+    <password>Krutika123</password>
+    <firstname>Krutika</firstname>
+    <lastname>Londhe</lastname>
+    <gender>Female</gender>
+    <email>krutika@gmail.com</email>
+    <position>Software Developer</position>
+    <salary>9.5lpa</salary>
+    <contact>+91 9876543210</contact>
+  </employee>
+
+  <employee>
+    <username>AyushK</username>
+    <password>Ayush123</password>
+    <firstname>Ayush</firstname>
+    <lastname>Kesharwani</lastname>
+    <gender>Male</gender>
+    <email>Ayush@gmail.com</email>
+    <position>Software Developer</position>
+    <salary>8.5lpa</salary>
+    <contact>+91 9123456780</contact>
+  </employee>
+
+  <employee>
+    <username>Sanika</username>
+    <password>Sanika123</password>
+    <firstname>Sanika</firstname>
+    <lastname>Bhawale</lastname>
+    <gender>Female</gender>
+    <email>Sanika@gmail.com</email>
+    <position>Frontend Developer</position>
+    <salary>7.5lpa</salary>
+    <contact>+91 9988776655</contact>
+  </employee>
+
+  <employee>
+    <username>HarshadM</username>
+    <password>harshad123</password>
+    <firstname>Harshad</firstname>
+    <lastname>More</lastname>
+    <gender>Male</gender>
+    <email>harshad@gmail.com</email>
+    <position>Marketing Manager</position>
+    <salary>12lpa</salary>
+    <contact>+91 9012345678</contact>
+  </employee>
+
+  <employee>
+    <username>SamarthJ</username>
+    <password>samarth123</password>
+    <firstname>Samarth</firstname>
+    <lastname>Joshi</lastname>
+    <gender>Male</gender>
+    <email>samarth@gmail.com</email>
+    <position>Human Resources Manager</position>
+    <salary>10lpa</salary>
+    <contact>+91 8899776655</contact>
+  </employee>
+
+</company>
